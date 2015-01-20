@@ -41,7 +41,7 @@ if you look at it in a certain way.
 ## What just happened?
 
 > 
-> we call this <~ `lift`
+> we call this `<~` `map` (or `lift`)
 
 
 ## <lighthouse or radio or something>
@@ -51,9 +51,9 @@ if you look at it in a certain way.
 * the only way to get outside input in elm
 * the type reflects this
 
-* lifting a function into a signal transforms your signal
+* mapping a function onto a signal transforms your signal
 * but never ever do you get a non-signal value from a signal
-
+* it's a good idea to "stay pure" as much as you can
 
 ## Resources
 

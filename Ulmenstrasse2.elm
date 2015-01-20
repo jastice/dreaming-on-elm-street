@@ -1,5 +1,10 @@
 import Mouse
 import Text
+import Text (..)
+import Graphics.Collage (..)
+import Graphics.Element (..)
+import Color (..)
+import Signal (..)
 
 -- Path and Form
 -- origin is at center
@@ -11,7 +16,7 @@ top = move (0,300) border
 bottom = move (0,-300) border
 
 -- showing Text
-sign = toText "Ulmenstrasse" |> Text.height 30 |> centered |> toForm |> move (0,350)
+sign = fromString "Ulmenstrasse" |> Text.height 30 |> centered |> toForm |> move (0,350)
 
 -- images are elements, too
 nightmare x = image 100 100 "img/luna.png" |> toForm |> move (x,0)
