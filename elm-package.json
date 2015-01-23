@@ -1,0 +1,14 @@
+{
+    "version": "1.0.0",
+    "summary": "Dreaming on Elm Street presentation",
+    "repository": "https://github.com/USER/PROJECT.git",
+    "license": "BSD3",
+    "source-directories": [
+        "."
+    ],
+    "exposed-modules": [],
+    "dependencies": {
+        "elm-lang/core": "1.1.0 <= v < 2.0.0",
+        "Apanatshka/elm-signal-extra": "3.2.0 <= v < 3.3.0"
+    }
+}
