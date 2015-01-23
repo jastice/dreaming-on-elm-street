@@ -38,4 +38,4 @@ intro = Text.fromString "JavaScript" |> Text.height 160 |> Text.centered
 magicalRhino = fittedImage 500 656 "img/javascript.jpg"
 
 -- _Nightmare_ from MLP
-magicalUnicornNightmare = image 100 900 "img/luna.png"
+magicalUnicornNightmare = image 400 400 "img/luna.png"
