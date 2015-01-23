@@ -1,4 +1,7 @@
-# My Little Pong
+# Moving Things
+
+
+# Advanced: My Little Pong
 
 Hands-on session
 

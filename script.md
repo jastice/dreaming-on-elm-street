@@ -40,8 +40,7 @@ if you look at it in a certain way.
 
 ## What just happened?
 
-> 
-> we call this `<~` `map` (or `lift`)
+> we call this `<~` `map`
 
 
 ## <lighthouse or radio or something>
@@ -54,6 +53,15 @@ if you look at it in a certain way.
 * mapping a function onto a signal transforms your signal
 * but never ever do you get a non-signal value from a signal
 * it's a good idea to "stay pure" as much as you can
+
+### Folding the past
+
+## Data structures and control flow
+
+* `if`
+* 
+
+## Architecture
 
 ## Resources
 

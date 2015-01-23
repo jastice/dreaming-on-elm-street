@@ -1,8 +1,11 @@
+module Ulmenstrasse (slide) where
+
 import Text
 import Text (..)
 import Graphics.Collage (..)
 import Graphics.Element (..)
 import Color (..)
+import Signal
 
 -- Path and Form
 -- origin is at center
@@ -22,5 +25,6 @@ nightmare = image 100 100 "img/luna.png" |> toForm
 -- collage: combine Forms to an Element
 scene = collage 800 800 [top, bottom, center, nightmare, sign]
 
-main = scene
+slide = Signal.constant scene
 
+main = scene

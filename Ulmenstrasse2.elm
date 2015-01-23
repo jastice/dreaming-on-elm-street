@@ -1,3 +1,5 @@
+module Ulmenstrasse2 (slide) where
+
 import Mouse
 import Text
 import Text (..)
@@ -16,7 +18,7 @@ top = move (0,300) border
 bottom = move (0,-300) border
 
 -- showing Text
-sign = fromString "Ulmenstrasse" |> Text.height 30 |> centered |> toForm |> move (0,350)
+sign = fromString "Ulmenstrasse 2" |> Text.height 30 |> centered |> toForm |> move (0,350)
 
 -- images are elements, too
 nightmare x = image 100 100 "img/luna.png" |> toForm |> move (x,0)
@@ -29,4 +31,6 @@ nightmareSignal = nightmare << (\x -> x-400) << toFloat <~ Mouse.x
 -- collage: combine Forms to an Element
 scene mare = collage 800 800 [top, bottom, center, mare, sign]
 
-main = scene <~ nightmareSignal
+slide = scene <~ nightmareSignal
+
+main = slide
