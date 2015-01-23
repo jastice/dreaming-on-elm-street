@@ -6,7 +6,7 @@ import Signal (Signal, (<~), constant, foldp)
 import Graphics.Element (..)
 import Keyboard
 import Debug
-import Signal.Extra (applyMany, combine)
+import Signal.Extra (applyMany)
 import Slides (slides)
 
 type Control = Top | Bottom | Previous | Next | None
@@ -47,5 +47,3 @@ main = applyMany (chooseSlide <~ currentSlide) slides
 
 -- debug
 slideWatch = Debug.watch "slide" <~ currentSlide
-
-slidesW = Debug.watch "slides" <~ combine slides
