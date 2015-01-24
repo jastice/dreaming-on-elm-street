@@ -37,22 +37,22 @@ logo = image 800 800 "img/logo.svg"
 
 
 -- O'Reilly JavaScript definitive guide cover
-magicalRhino = image 500 656 "img/javascript.jpg"
+magicalRhino = fittedImage 800 800 "img/javascript.jpg"
 
 -- _Nightmare_ from MLP
-magicalUnicornNightmare = fittedImage 400 400 "img/luna.png"
+magicalUnicornNightmare = fittedImage 800 800 "img/luna.png"
 
 
--- `JavaScript` animation
+-- `JavaScript` animation slide
 
 javaScript: Float -> Form
 javaScript t = Text.fromString "JavaScript" 
   |> Text.typeface ["Comic Sans MS"] 
   |> Text.height 120 |> Text.centered
   |> toForm
-  |> (rotate <| (sin t) * 0.3)
+  |> rotate ((sin t) * 0.2)
 
 tick = Time.every (60*Time.millisecond)
 
 javaScriptAnimation: Float -> Element
-javaScriptAnimation t = collage 800 800 [javaScript (t/200)]
+javaScriptAnimation t = collage 800 800 [javaScript (t/250)]
