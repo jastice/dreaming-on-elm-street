@@ -1,6 +1,10 @@
 # Unicorns on Elm Street
 
-## big type `JavaScript`, white on black
+## Elm logo
+
+> This talk is about Elm. But let's start with ...
+
+## big type `JavaScript` animated
 
 > JavaScript!
 
