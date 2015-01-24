@@ -6,4 +6,4 @@ Includes its own little presentation tool: [Presenter.elm](Presenter.elm) which 
 
 Because of bugs, something in the Presenter breaks hot-swapping in elm-reactor, which is a shame.
 
-See [the presentation script](script.md) and [the Hands-on session](hands-on.md). 
+See [the presentation script](script.md) and [the hands-on session](hands-on.md). 
