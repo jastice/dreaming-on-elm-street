@@ -60,12 +60,15 @@ if you look at it in a certain way.
 
 ### Folding the past
 
-## Data structures and control flow
+## Do something cool with luna
 
-* `if`
-* 
+maybe bouncing along elm street
 
-## Architecture
+### Time traveling Debugger
+
+* boxes and bubbles: bouncing ponies
+* roll back time "braid for free!"
+
 
 ## Resources
 

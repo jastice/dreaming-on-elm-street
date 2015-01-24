@@ -31,6 +31,9 @@ slides = [
   -- signals overview
   -- empty example for foldp
   -- "Folding the Past" concept introduction
+  -- do something cool with luna
+  -- some of the examples from the website
+  -- boxes-and-bubbles example, use with debugger "braid for free!"
   ]
 
 logo = image 800 800 "img/logo.svg"
@@ -40,7 +43,7 @@ logo = image 800 800 "img/logo.svg"
 magicalRhino = fittedImage 800 800 "img/javascript.jpg"
 
 -- _Nightmare_ from MLP
-magicalUnicornNightmare = fittedImage 800 800 "img/luna.png"
+magicalUnicornNightmare = fittedImage 800 200 "img/luna.png"
 
 
 -- `JavaScript` animation slide
@@ -48,7 +51,7 @@ magicalUnicornNightmare = fittedImage 800 800 "img/luna.png"
 javaScript: Float -> Form
 javaScript t = Text.fromString "JavaScript" 
   |> Text.typeface ["Comic Sans MS"] 
-  |> Text.height 120 |> Text.centered
+  |> Text.height 20 |> Text.centered
   |> toForm
   |> rotate ((sin t) * 0.2)
 
