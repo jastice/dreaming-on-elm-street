@@ -8,9 +8,15 @@
 
 > JavaScript!
 
+> so how would you program *this* in JavaScript?
+> I mean, I don't really know, you tell me.
+
+
 ## O'Reilly JavaScript definitive guide cover
 
-> As this book cover exemplifies, it's obviously big and ugly, but also a kind of magical unicorn --
+> You might be familiar with this big, fat book featuring a big fat animal on the cover.
+
+> As this cover exemplifies, it's obviously big and ugly, but also a kind of magical unicorn --
 if you look at it in a certain way.
 
 > But what if we had a more pretty unicorn?
@@ -18,9 +24,19 @@ if you look at it in a certain way.
 
 ## _Nightmare_ from MLP
 
-> This Night-Mare and I am going to take you on a trip to Elm Street today.
+> This (former) Night-Mare and I am going to take you on a trip to Elm Street today.
 
-## {empty canvas}
+## Ulmenstrasse
+
+> Since we're in Germany, it's of course called Ulmenstrasse
+> I actually used to live on this street.
+
+> We'll have to take a link...
+
+## Baustelle
+
+> Oh damn, it's still under construction!
+> We better get building
 
 > Let's code up a street and put in our Night-Mare
 > (I actually used to live on Elm Street)

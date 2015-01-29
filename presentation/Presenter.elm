@@ -1,13 +1,14 @@
-module Presenter where
+module Presenter(positioning,main) where
 
 import Text (..)
 import List (..)
-import Signal (Signal, (<~), constant, foldp)
+import Signal (Signal, (<~), (~), constant, foldp)
 import Graphics.Element (..)
 import Keyboard
 import Debug
 import Signal.Extra (applyMany)
 import Slides (slides)
+import Window (dimensions)
 
 type Control = Top | Bottom | Previous | Next | None
 
@@ -33,6 +34,8 @@ controlAction {x,y} = case (x,y) of
   _ -> None
 
 
+positioning (w,h) slide = container w h middle slide 
+
 -- signals
 
 displaySlide: Int -> Signal Element
@@ -41,9 +44,7 @@ displaySlide page = drop page slides |> head
 controls = controlAction <~ Keyboard.arrows
 currentSlide = foldp updateSlide 0 controls
 
+theActualSlideSignal = applyMany (chooseSlide <~ currentSlide) slides
+positionedSlide = positioning <~ dimensions ~ theActualSlideSignal
 
-main = applyMany (chooseSlide <~ currentSlide) slides
-
-
--- debug
-slideWatch = Debug.watch "slide" <~ currentSlide
+main = positionedSlide

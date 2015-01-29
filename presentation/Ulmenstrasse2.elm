@@ -1,4 +1,4 @@
-module Ulmenstrasse2 (slide) where
+module Ulmenstrasse2 (slide,main) where
 
 import Mouse
 import Text
@@ -21,9 +21,9 @@ bottom = move (0,-300) border
 sign = fromString "Ulmenstrasse 2" |> Text.height 30 |> centered |> toForm |> move (0,350)
 
 -- images are elements, too
-nightmare x = image 100 100 "img/luna.png" |> toForm |> move (x,0)
+nightmare x = image 100 100 "../img/luna.png" |> toForm |> move (x,0)
 
--- lifting
+-- mapping functions onto signal
 -- function composition
 -- lambda
 nightmareSignal = nightmare << (\x -> x-400) << toFloat <~ Mouse.x

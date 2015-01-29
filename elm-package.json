@@ -1,14 +1,17 @@
 {
     "version": "1.0.0",
     "summary": "Dreaming on Elm Street presentation",
-    "repository": "https://github.com/USER/PROJECT.git",
+    "repository": "https://github.com/jastice/dreaming-on-elm-street.git",
     "license": "BSD3",
     "source-directories": [
-        "."
+        "presentation",
+        "hands-on"
     ],
     "exposed-modules": [],
     "dependencies": {
         "elm-lang/core": "1.1.0 <= v < 2.0.0",
-        "Apanatshka/elm-signal-extra": "3.2.0 <= v < 4.0.0"
+        "Apanatshka/elm-signal-extra": "3.2.0 <= v < 4.0.0",
+        "jastice/boxes-and-bubbles": "1.0.0 <= v < 2.0.0",
+        "evancz/elm-markdown": "1.1.2 <= v < 2.0.0"
     }
 }
