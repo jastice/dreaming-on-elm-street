@@ -11,9 +11,11 @@ Elm has a fairly small set of default imports. For these exercises, add this set
     import Signal
     import Signal ((<~),(~))
 
+
 # Syntax
 
 See the syntax reference: http://elm-lang.org/learn/Syntax.elm
+
 
 # Draw Stuff
 
@@ -27,12 +29,14 @@ You will need:
 * [`filled`](http://package.elm-lang.org/packages/elm-lang/core/1.1.0/Graphics-Collage#filled)
 * [`collage`](http://package.elm-lang.org/packages/elm-lang/core/1.1.0/Graphics-Collage#collage)
 
+
 # Moving Things
 
 Group your caterpillar
 
 You will need:
 * [`group`](http://package.elm-lang.org/packages/elm-lang/core/1.1.0/Graphics-Collage#group)
+
 
 # Passing Time
 
@@ -50,9 +54,8 @@ It will eventually fall off the screen. Tell it to turn around once it reaches t
 Try to retain the wave motion.
 
 You will need:
-* [`foldp`](http://package.elm-lang.org/packages/elm-lang/core/1.1.0/Signal#foldp)
+* [`Signal.foldp`](http://package.elm-lang.org/packages/elm-lang/core/1.1.0/Signal#foldp)
 * tuples or [records](http://elm-lang.org/learn/Syntax.elm#records)
-
 
 
 # Advanced: My Little Pong
