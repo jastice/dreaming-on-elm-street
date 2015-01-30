@@ -80,6 +80,12 @@ if you look at it in a certain way.
 
 Luna walking in circles
 
+## foldp signature
+
+> This is the only way to keep state in Elm, and it's all you need.
+> Your current state is simply a transition from the previous state.
+> All you need to make this transition is a function.
+
 ## De Lorian
 
 ### Time traveling Debugger
