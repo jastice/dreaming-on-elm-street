@@ -8,4 +8,4 @@ Includes its own little presentation tool: [Presenter.elm](Presenter.elm) which 
 
 Because of bugs in Elm, something in the Presenter breaks hot-swapping, and various glitches may occur. I'm sure it will be fixed some day.
 
-See [the presentation script](script.md) and [the hands-on session](hands-on.md).
+See [the presentation script](script.md) (messy) and [the hands-on session](hands-on.md).

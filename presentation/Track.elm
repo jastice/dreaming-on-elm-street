@@ -10,7 +10,7 @@ main = Markdown.toElement """
 
 # Dreaming on Elm Street
   
-* [Full Presentation](Slides.elm)
+* [Full Presentation](DreamingOnElmStreet.elm)
 * [Part 1: Elm Street](Part1.elm)
 * [Part 2: Concepts](Part2.elm)
 * [Part 3: Signals](Part3.elm)

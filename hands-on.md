@@ -10,11 +10,13 @@ Elm has a fairly small set of default imports. For these exercises, add this set
     import Time
     import Signal
     import Signal ((<~),(~))
+    import Mouse
 
+# Get acquainted
 
-# Syntax
+Have a look at [the examples](http://elm-lang.org/Examples.elm).
 
-See the syntax reference: http://elm-lang.org/learn/Syntax.elm
+See the [syntax reference](http://elm-lang.org/learn/Syntax.elm).
 
 
 # Draw Stuff
@@ -32,10 +34,12 @@ You will need:
 
 # Moving Things
 
-Group your caterpillar
+Group your caterpillar. Make it follow the mouse cursor
 
 You will need:
 * [`group`](http://package.elm-lang.org/packages/elm-lang/core/1.1.0/Graphics-Collage#group)
+* [`Mouse.position`](http://package.elm-lang.org/packages/elm-lang/core/1.1.0/Mouse#position)
+* [`Signal.map` or `<~`](http://package.elm-lang.org/packages/elm-lang/core/1.1.0/Signal#map)
 
 
 # Passing Time
