@@ -9,3 +9,7 @@ Includes its own little presentation tool: [Presenter.elm](Presenter.elm) which 
 Because of bugs in Elm, something in the Presenter breaks hot-swapping, and various glitches may occur. I'm sure it will be fixed some day.
 
 See [the presentation script](script.md) (messy) and [the hands-on session](hands-on.md).
+
+# Justin
+
+Hi I'm Justin, and I gave the talk and made this. You can follow me on Twitter [@ebenwert](https://twitter.com/ebenwert).
