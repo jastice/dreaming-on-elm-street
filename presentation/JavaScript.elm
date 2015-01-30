@@ -17,6 +17,5 @@ javaScript t = fromString "JavaScript"
 
 javaScriptAnimation t = collage 800 800 [javaScript t]
 
-tick = Time.every (60*Time.millisecond)
-slide = javaScriptAnimation <~ tick
+slide = javaScriptAnimation <~ Time.every (60*Time.millisecond)
 main = positioning <~ Window.dimensions ~ slide
