@@ -36,7 +36,7 @@ if you look at it in a certain way.
 ## Baustelle
 
 > Oh damn, it's still under construction!
-> We better get building
+> We better start building something
 
 > Let's code up a street and put in our Night-Mare
 > (I actually used to live on Elm Street)
@@ -50,7 +50,7 @@ if you look at it in a certain way.
 * Collage
 * images
 
-## {empty canvas}
+## Ulmenstrasse
 
 > Let's have Princess Luna move ...
 > And put her back into Elm Street
@@ -60,12 +60,9 @@ if you look at it in a certain way.
 
 ## What just happened?
 
-> we call this `<~` `map`
+## <radio symbol>
 
-
-## <lighthouse or radio or something>
-
-### Signals!
+## Signals!
 
 * the only way to get outside input in elm
 * the type reflects this
@@ -74,11 +71,16 @@ if you look at it in a certain way.
 * but never ever do you get a non-signal value from a signal
 * it's a good idea to "stay pure" as much as you can
 
-### Folding the past
+## Folding the past
 
-## Do something cool with luna
+## Ulmenstrasse 3
 
-maybe bouncing along elm street
+> So it's a bit hard moving Luna by hand, I want her to move on her own
+> For this I'll use the fps signal, which just produces milliseconds with whatever frequency I choose
+
+Luna walking in circles
+
+## De Lorian
 
 ### Time traveling Debugger
 

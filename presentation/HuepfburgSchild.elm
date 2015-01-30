@@ -1,4 +1,4 @@
-module UlmenstrasseSchild (slide) where
+module HuepfburgSchild (slide) where
 
 import Text
 import Text (..)
@@ -8,7 +8,7 @@ import Graphics.Element (..)
 import Color (..)
 import Signal
 
-text = fromString "Ulmenstrasse" |> Text.height 120 |> Text.color white |> centered |> toForm
+text = fromString "Huepfburg" |> Text.height 120 |> Text.color white |> centered |> toForm
 background = rect 800 200 |> filled darkBlue
 
 outlineStyle = { defaultLine | width <- 5, color <- white, cap <- Round }
@@ -23,8 +23,6 @@ sign = collage 800 800 [
   move (-380,0) lineVert
   ]
 
-linkedSign = Graphics.Element.link "Ulmenstrasse-Baustelle.elm?debug" sign
+linkedSign = Graphics.Element.link "BouncingPonies.elm?debug" sign
 
 slide = linkedSign
-
---main = linkedSign

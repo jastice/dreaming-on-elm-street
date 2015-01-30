@@ -28,7 +28,7 @@ sign = fromString "Ulmenstrasse" |> Text.height 30 |> centered |> toForm |> move
 nightmare = fittedImage 100 100 "../img/luna.png" |> toForm
 
 -- collage: combine Forms to an Element
-scene = collage 800 800 [top, bottom, center, nightmare, sign]
+scene = collage 810 810 [top, bottom, center, nightmare, sign]
 
 slide = Signal.constant scene
 

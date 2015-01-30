@@ -7,10 +7,15 @@ import Markdown
 
 
 main = Markdown.toElement """
+
+# Dreaming on Elm Street
   
-  * [Main Presentation](Presenter.elm)
-  * [Ulmenstrasse](Ulmenstrasse.elm?debug)
-  * [Bouncing Ponies](BouncingPonies.elm?debug)
+* [Full Presentation](Slides.elm)
+* [Part 1: Elm Street](Part1.elm)
+* [Part 2: Concepts](Part2.elm)
+* [Part 3: Signals](Part3.elm)
+* [Part 3: Folding the Past](Part4.elm)
+* [Bouncing Castle](BouncingPonies.elm?debug)
 
       
   """

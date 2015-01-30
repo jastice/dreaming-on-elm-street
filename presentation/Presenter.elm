@@ -1,21 +1,23 @@
-module Presenter(positioning,main) where
+module Presenter(present,positioning,voidSlide,scaledElemIntoCollage) where
 
+import Array
+import Array(Array)
+import Text
 import Text (..)
 import List (..)
 import Signal (Signal, (<~), (~), constant, foldp)
 import Graphics.Element (..)
+import Graphics.Collage (..)
 import Keyboard
 import Debug
 import Signal.Extra (applyMany)
-import Slides (slides)
 import Window (dimensions)
 
 type Control = Top | Bottom | Previous | Next | None
 
-updateSlide: Control -> Int -> Int
-updateSlide control current = 
-  let lastSlide = length slides - 1
-      nextSlide = case control of
+updateSlide: Int -> Control -> Int -> Int
+updateSlide lastSlide control current = 
+  let nextSlide = case control of
         Top -> 0
         Previous -> current - 1
         Next -> current + 1
@@ -36,15 +38,26 @@ controlAction {x,y} = case (x,y) of
 
 positioning (w,h) slide = container w h middle slide 
 
+voidSlide = fromString "∅" |> Text.height 180 |> centered
+
+scaledElemIntoCollage elem = collage 800 800 [(scale 1.5 <| toForm elem)]
+
 -- signals
 
-displaySlide: Int -> Signal Element
-displaySlide page = drop page slides |> head
+--displaySlide: Int -> Signal Element
+displaySlide slides page = case (Array.get page slides) of
+  Just s -> s
+  Nothing -> voidSlide
 
-controls = controlAction <~ Keyboard.arrows
-currentSlide = foldp updateSlide 0 controls
+present: Array (Signal Element) -> Signal Element
+present slides = 
+  let lastSlide = Array.length slides - 1
+      controls = controlAction <~ Keyboard.arrows
+      currentSlide = foldp (updateSlide lastSlide) 0 controls
+      --theActualSlideSignal = (displaySlide slides) <~ currentSlide
+      slideList = Array.toList slides -- oh the hackness
+      theActualSlideSignal = applyMany (chooseSlide <~ currentSlide) slideList
+  in positioning <~ dimensions ~ theActualSlideSignal
 
-theActualSlideSignal = applyMany (chooseSlide <~ currentSlide) slides
-positionedSlide = positioning <~ dimensions ~ theActualSlideSignal
 
-main = positionedSlide
+--theActualSlideSignal = applyMany (chooseSlide <~ currentSlide) slides

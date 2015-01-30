@@ -11,7 +11,8 @@ import BoxesAndBubblesBodies (..)
 
 type alias Bouncy = Body {img: Form}
 
-bounciness = 0.3
+bounciness = 0.9
+constgravity t = ((0,-0.2), (0,0)) -- constant downward gravity
 
 luna = bubble 50 1 bounciness (300,300) (-10,0)
 celestia = bubble 50 1 bounciness (-300,300) (30,5)
@@ -39,7 +40,6 @@ drawBouncy {pos,img} = move pos img
 scene: List Bouncy -> Element
 scene bodies = collage 800 800 <| List.map drawBouncy bodies
 
-constgravity t = ((0,-0.2), (0,0)) -- constant downward gravity
 tick = constgravity <~ foldp (+) 0 (fps 40)
 
 slide = scene <~ run bodies tick
