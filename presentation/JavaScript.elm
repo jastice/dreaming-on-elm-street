@@ -1,11 +1,12 @@
 module JavaScript (slide,main) where
 
-import Text (..)
-import Graphics.Collage (..)
+import Text exposing (..)
+import Graphics.Collage exposing (..)
+import Graphics.Element exposing (centered)
 import Time
-import Signal ((<~),(~))
-import Presenter (positioning)
+import Signal exposing ((<~),(~))
 import Window
+import Tools exposing (positioning)
 
 -- `JavaScript` animation slide
 

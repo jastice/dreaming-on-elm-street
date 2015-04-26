@@ -1,13 +1,13 @@
 module BouncingPonies (slide,main) where
 
-import Graphics.Collage (..)
-import Graphics.Element (..)
-import Time (fps)
-import Signal ((<~), (~), foldp)
+import Graphics.Collage exposing (..)
+import Graphics.Element exposing (..)
+import Time exposing (fps)
+import Signal exposing ((<~), (~), foldp)
 import Text
 import List
-import BoxesAndBubbles (..)
-import BoxesAndBubblesBodies (..)
+import BoxesAndBubbles exposing (..)
+import BoxesAndBubblesBodies exposing (..)
 
 type alias Bouncy = Body {img: Form}
 

@@ -1,11 +1,11 @@
 module HuepfburgSchild (slide) where
 
 import Text
-import Text (..)
-import Graphics.Collage (..)
+import Text exposing (..)
+import Graphics.Collage exposing (..)
 import Graphics.Element
-import Graphics.Element (..)
-import Color (..)
+import Graphics.Element exposing (..)
+import Color exposing (..)
 import Signal
 
 text = fromString "Huepfburg" |> Text.height 120 |> Text.color white |> centered |> toForm

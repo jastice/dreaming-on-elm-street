@@ -2,11 +2,11 @@ module Ulmenstrasse2 (slide,main) where
 
 import Mouse
 import Text
-import Text (..)
-import Graphics.Collage (..)
-import Graphics.Element (..)
-import Color (..)
-import Signal (..)
+import Text exposing (..)
+import Graphics.Collage exposing (..)
+import Graphics.Element exposing (..)
+import Color exposing (..)
+import Signal exposing (..)
 
 -- Path and Form
 -- origin is at center
