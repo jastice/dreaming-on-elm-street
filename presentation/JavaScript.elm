@@ -4,7 +4,7 @@ import Text exposing (..)
 import Graphics.Collage exposing (..)
 import Graphics.Element exposing (centered)
 import Time
-import Signal exposing ((<~),(~))
+import Signal.Extra exposing ((<~),(~))
 import Window
 import Tools exposing (positioning)
 

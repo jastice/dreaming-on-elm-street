@@ -4,7 +4,8 @@ import President exposing (voidSlide)
 import Array
 import Text
 import List
-import Signal exposing (Signal, (<~), (~), constant, foldp)
+import Signal exposing (Signal, constant, foldp)
+import Signal.Extra exposing ((<~),(~))
 import Graphics.Element exposing (..)
 import Graphics.Collage exposing (Form, collage, toForm, rotate, scale)
 import Keyboard

@@ -7,12 +7,13 @@ import Graphics.Collage exposing (..)
 import Graphics.Element exposing (..)
 import Color exposing (..)
 import Signal exposing (..)
+import Signal.Extra exposing ((<~),(~))
 import Time exposing (fps)
 
 -- Path and Form
 -- origin is at center
-centerStyle = { defaultLine | width <- 10, color <- yellow, dashing <- [40,10] }
-borderStyle = { defaultLine | width <- 6 }
+centerStyle = { defaultLine | width = 10, color = yellow, dashing = [40,10] }
+borderStyle = { defaultLine | width = 6 }
 center = path [(-400,0),(400,0)] |> traced centerStyle
 border = path [(-400,0),(400,0)] |> traced borderStyle
 

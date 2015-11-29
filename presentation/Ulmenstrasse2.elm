@@ -7,6 +7,7 @@ import Graphics.Collage exposing (..)
 import Graphics.Element exposing (..)
 import Color exposing (..)
 import Signal exposing (..)
+import Signal.Extra exposing ((<~),(~))
 
 -- Path and Form
 -- origin is at center
